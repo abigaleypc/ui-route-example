@@ -1,0 +1,32 @@
+<html ng-app='abigale'>
+
+<head>
+    <script src="./node_modules/angular/angular.min.js"></script>
+    <script src="./node_modules/angular-ui-router/release/angular-ui-router.min.js"></script>
+    <script src="./mian.js"></script>
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css">
+    <title>ui-route example</title>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">Anular路由例子</a>
+            </div>
+            <div>
+                <ul class="nav navbar-nav">
+                    <li><a ui-sref="sample" ui-sref-active="active">简单</a></li>
+                    <li><a ui-sref="withParams" ui-sref-active="active">带参数例子</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container-fluid">
+        <ui-view></ui-view>
+    </div>
+
+</body>
+
+</html>
